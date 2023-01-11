@@ -106,6 +106,7 @@ lazy val blazeCore = Project("http4s-blaze-core", file("blaze-core"))
     startYear := Some(2014),
     libraryDependencies ++= Seq(
       "org.http4s" %% "http4s-core" % http4sVersion,
+      "org.typelevel" %% "cats-effect" % "3.5-4b87497",
       "org.typelevel" %% "munit-cats-effect" % munitCatsEffectVersion % Test,
       logbackClassic % Test,
     ),
